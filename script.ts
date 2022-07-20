@@ -266,3 +266,22 @@ class Utente implements persona, lav {
         return this.name + " " + this.last_name
     }
 }
+
+//ES
+/*
+(interface), readonly, abstract, extends, ...
+
+1- creare interface per la classe astratta (prop e metodi che dovrà avere)
+2- creare la classe astratta e definire assegnazione delle proprietà che possiamo inzializzare e i metodi che sappiamo come lavorano, gli altri astratti
+3 - creare 3 sottoclassi Commerciante, LiberoProfessionista, Dipendente specificando props e metodi specifici (polimorfismo su metodi della superclasse, definizione dei metodi astrati, se necessario cdefinizione di nuovi metodi e prop)
+4 - in output calcolare le tasse per 3 lavoratori
+
+codredd - percentuale per il calcolo dell'utile (in base al tipo di lavoratore)
+tasseInps/tasseIrpef - costanti per tutti i lavoratori (o diverse) per contare le tasse
+redditoAnnuoLordo - parametro
+
+getUtileTasse:number -> codredd% del reddito lordo
+getTasseInps:number -> utile * tasseInps%
+getTasseIrpef:number -> utile * tasseIrpef%
+getRedditoAnnuoNetto:number -> reddito lordo  - tasse inps e/o tasse irpef (ogni tipo di lavoratore fa reddito lordo - una o entrambe le tasse)
+*/
